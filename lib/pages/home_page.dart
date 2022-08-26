@@ -12,10 +12,14 @@ class HomePage extends StatelessWidget {
           "EKart",
         ),
       ),
-      body: Center(
-        child: Container(
-          child: Text("Welcome to my app"),
-        ),
+      body: Column(
+        children: [
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.red,
+          ),
+        ],
       ),
       drawer: MyDrawer(),
     );
