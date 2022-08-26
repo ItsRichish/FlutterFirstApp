@@ -24,11 +24,12 @@ class _HomePageState extends State<HomePage> {
     var cartJson = await rootBundle.loadString("assets/files/cart.json");
     var decodedData = jsonDecode(cartJson);
     var productsData = decodedData["products"];
+    await Future.delayed(Duration(seconds: 2));
   }
 
   @override
   Widget build(BuildContext context) {
-    final dummyList = List.generate(10, (index) => CatalogModel.item[0]);
+    final dummyList = List.generate(8, (index) => CatalogModel.items[index]);
     return Scaffold(
       appBar: AppBar(
         title: Text(
