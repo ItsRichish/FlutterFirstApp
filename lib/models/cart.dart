@@ -65,6 +65,13 @@ class CatalogModel {
         image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNHd7FwarbxA1xdMFt24KazjcR4dWPH_t_T5dz4YNK1s7rJAQ8gOIuR_NRw6eeiQgFhbZ9sAN&usqp=CAc")
   ];
+
+  //Get by Id
+  static Item getById(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
+
+  //Get Item by position
+  static Item getByPosition(int pos) => items[pos];
 }
 
 class Item {
