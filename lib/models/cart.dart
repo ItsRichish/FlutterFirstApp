@@ -1,7 +1,7 @@
 class CatalogModel {
   static final items = [
     Item(
-        id: "1",
+        id: 1,
         name: "iPhone 12 Pro",
         desc: "Apple iPhone 12th generation",
         price: 999,
@@ -9,7 +9,7 @@ class CatalogModel {
         image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISJ6msIu4AU9_M9ZnJVQVFmfuhfyJjEtbUm3ZK11_8IV9TV25-1uM5wHjiFNwKy99w0mR5Hk&usqp=CAc"),
     Item(
-        id: "2",
+        id: 2,
         name: "Pixel 5",
         desc: "Google Pixel phone 5th generation",
         price: 699,
@@ -17,7 +17,7 @@ class CatalogModel {
         image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd0JhwLvm_uLDLc-la7hK9WyVpe9naJFcebKfhcICiq2KtvXDePNAU_9QO06LPcQ0K0fLByc7m&usqp=CAc"),
     Item(
-        id: "3",
+        id: 3,
         name: "M1 Macbook Air",
         desc: "Apple Macbook air with apple silicon",
         price: 1099,
@@ -25,7 +25,7 @@ class CatalogModel {
         image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOMstwtmLnjFb3NHiDJ_kcQnueNVH-rv_3ps96HZmXlFumKWaiBqq_L4Uoyx3iFiNTrXNEbyB&usqp=CAc"),
     Item(
-        id: "4",
+        id: 4,
         name: "Playstation 5",
         desc: "Sony Playstation 5th generation",
         price: 500,
@@ -33,7 +33,7 @@ class CatalogModel {
         image:
             "https://i1.wp.com/freepngimages.com/wp-content/uploads/2020/07/Playstation-5-games-console-transparent-background-png-image.png?fit=1000%2C1000"),
     Item(
-        id: "5",
+        id: 5,
         name: "Airpods Pro",
         desc: "Apple Aipods Pro 1st generation",
         price: 200,
@@ -41,7 +41,7 @@ class CatalogModel {
         image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQROEs084z65psoo06zYl5R0tUzywOVKVQZzmzqCj3PDP1vVJTWv3gGwGMFENSy4qV4n7sEQjE&usqp=CAc"),
     Item(
-        id: "6",
+        id: 6,
         name: "iPad Pro",
         desc: "Apple iPad Pro 2020 edition",
         price: 799,
@@ -49,7 +49,7 @@ class CatalogModel {
         image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzUeRQ5uH7E3hpECib8qxdhfHv6SnUGT7mOsew_xiOoqRR7ZpdH-TQ4J6-HuIEfqHimYyPXWH&usqp=CAc"),
     Item(
-        id: "7",
+        id: 7,
         name: "Galaxy S21 Ultra",
         desc: "Samsung Galaxy S21 Ultra 2021 edition",
         price: 1299,
@@ -57,7 +57,7 @@ class CatalogModel {
         image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_PZcc0wicVYR992s5QCIDLYy8t-z-9kibTUdWZBN2sd86aaqdAJfhvxAwZNWV9wfdzDikpr1&usqp=CAc"),
     Item(
-        id: "8",
+        id: 8,
         name: "Galaxy S21",
         desc: "Samsung Galaxy S21 2021 edition",
         price: 899,
@@ -67,15 +67,15 @@ class CatalogModel {
   ];
 
   //Get by Id
-  static Item getById(int id) =>
+   Item getById(int id) =>
       items.firstWhere((element) => element.id == id, orElse: null);
 
   //Get Item by position
-  static Item getByPosition(int pos) => items[pos];
+   Item getByPosition(int pos) => items[pos];
 }
 
 class Item {
-  final String id;
+  final int id;
   final String name;
   final String desc;
   final num price;

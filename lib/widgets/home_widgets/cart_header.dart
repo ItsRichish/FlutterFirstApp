@@ -8,7 +8,7 @@ class CartHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        "Ekart App".text.xl5.bold.color(context.theme.accentColor).make(),
+        "BIG O".text.xl5.bold.color(context.theme.accentColor).make(),
         "Trending Products".text.xl2.make(),
       ],
     );
